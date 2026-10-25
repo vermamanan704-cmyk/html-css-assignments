@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A basic hero section and navigation using Flexbox.">
+  <title>Flexbox Navigation and Hero</title>
+  <style>
+body { font-family: Arial, sans-serif; margin: 0; }
+    .nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 16px; background: #eaf2f8; }
+    nav { display: flex; gap: 12px; flex-wrap: wrap; }
+    .hero { display: flex; align-items: center; justify-content: space-around; gap: 20px; padding: 32px 16px; }
+    .hero img { max-width: 100%; height: auto; }
+    main > section:not(.hero) { padding: 16px; }
+    @media (max-width: 600px) { .hero { flex-direction: column; align-items: flex-start; } }
+  </style>
+</head>
+<body>
+<header class="nav"><h1>Student Web Project</h1><nav><a href="#features">Features</a><a href="#about">About</a><a href="#contact">Contact</a></nav></header>
+  <main><section class="hero"><div><h2>Build Simple Websites</h2><p>Learn web page structure and styling with HTML and CSS.</p><a href="#features">Learn More</a></div><img src="web-page.svg" alt="Illustration of a web page" width="260"></section>
+    <section id="features"><h2>Features</h2><ul><li>Simple page structure</li><li>Basic CSS</li><li>Responsive layout</li></ul></section>
+    <section id="about"><h2>About</h2><p>This page is a practice project.</p></section><section id="contact"><h2>Contact</h2><p><a href="mailto:mananverma704@gmail.com">Email</a></p></section>
+  </main>
+</body>
+</html>

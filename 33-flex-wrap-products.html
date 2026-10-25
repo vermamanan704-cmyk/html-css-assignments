@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product cards that wrap using CSS Flexbox.">
+  <title>Product List with Flex Wrap</title>
+  <style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+    .products { display: flex; flex-wrap: wrap; gap: 12px; }
+    .product { flex: 1 1 180px; padding: 14px; border: 1px solid #cccccc; }
+    button { padding: 8px; }
+  </style>
+</head>
+<body>
+<h1>Sample Product List</h1><p>Resize the browser to see the cards wrap.</p>
+  <main class="products">
+    <article class="product"><h2>Laptop</h2><p>Sample product</p><p>Example price: Rs. 64999</p><button type="button">View</button></article>
+    <article class="product"><h2>Keyboard</h2><p>Sample product</p><p>Example price: Rs. 4499</p><button type="button">View</button></article>
+    <article class="product"><h2>Watch</h2><p>Sample product</p><p>Example price: Rs. 2999</p><button type="button">View</button></article>
+    <article class="product"><h2>Headphones</h2><p>Sample product</p><p>Example price: Rs. 1999</p><button type="button">View</button></article>
+  </main>
+</body>
+</html>

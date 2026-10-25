@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A small landing page layout using Flexbox.">
+  <title>Flexbox Landing Page</title>
+  <style>
+body { font-family: Arial, sans-serif; margin: 0; }
+    .nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 16px; background: #edf4ea; }
+    nav { display: flex; gap: 12px; }
+    .hero { display: flex; justify-content: space-around; align-items: center; gap: 20px; padding: 32px 16px; background: #f5f7f2; }
+    .box { border: 1px solid #cccccc; padding: 16px; max-width: 240px; }
+    .features { display: flex; flex-wrap: wrap; gap: 12px; padding: 16px; }
+    .features article { flex: 1 1 180px; border: 1px solid #cccccc; padding: 12px; }
+    main > section:last-child { padding: 16px; }
+    @media (max-width: 600px) { .hero { flex-direction: column; align-items: flex-start; } }
+  </style>
+</head>
+<body>
+<header class="nav"><h1>Fitness Plan</h1><nav><a href="#plans">Plans</a><a href="#about">About</a></nav></header>
+  <main><section class="hero"><div><h2>Plan Your Week</h2><p>This sample page demonstrates a Flexbox landing layout.</p><a href="#plans">View Plans</a></div><div class="box"><h3>Weekly Plan</h3><p>Set a simple goal and follow your schedule.</p></div></section>
+    <section id="plans" class="features"><article><h2>Plan One</h2><p>Start with a simple schedule.</p></article><article><h2>Plan Two</h2><p>Build a regular routine.</p></article><article><h2>Plan Three</h2><p>Review your progress.</p></article></section>
+    <section id="about"><h2>About</h2><p>This is a layout example for learning CSS.</p></section>
+  </main>
+</body>
+</html>

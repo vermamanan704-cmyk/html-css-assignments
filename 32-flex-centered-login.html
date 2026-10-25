@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A login form centered with CSS Flexbox.">
+  <title>Centered Login Form</title>
+  <style>
+body { font-family: Arial, sans-serif; margin: 0; }
+    .container { min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 16px; box-sizing: border-box; }
+    .login { width: 280px; display: flex; flex-direction: column; gap: 10px; padding: 20px; border: 1px solid #cccccc; }
+    input, button { padding: 8px; }
+  </style>
+</head>
+<body>
+<main class="container"><form class="login" action="#" method="get"><h1>Login Form</h1>
+    <label for="email">Email</label><input id="email" name="email" type="email" required>
+    <label for="password">Password</label><input id="password" name="password" type="password" required>
+    <button type="submit">Log In</button><p>This is a layout practice form. It does not verify an account.</p>
+  </form></main>
+</body>
+</html>

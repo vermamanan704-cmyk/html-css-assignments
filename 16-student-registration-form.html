@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A basic student registration form using HTML form controls.">
+  <title>Student Registration Form</title>
+</head>
+<body>
+<h1>Student Registration Form</h1>
+  <form action="#" method="get">
+    <p><label for="name">Full name</label><br><input id="name" name="name" type="text" required></p>
+    <p><label for="email">Email</label><br><input id="email" name="email" type="email" required></p>
+    <p><label for="course">Course</label><br><select id="course" name="course" required><option value="">Choose a course</option><option>BCA Artificial Intelligence</option><option>BCA</option></select></p>
+    <p><label for="gender">Gender</label><br><select id="gender" name="gender"><option value="">Choose an option</option><option>Female</option><option>Male</option><option>Prefer not to say</option></select></p>
+    <p><label><input type="checkbox" name="agree" required> I agree to the form terms.</label></p>
+    <button type="submit">Register</button> <button type="reset">Clear</button>
+  </form>
+  <p>This is a practice form. It does not save data to a server.</p>
+</body>
+</html>

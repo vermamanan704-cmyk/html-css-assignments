@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive page that fixes overflowing navigation, cards and tables.">
+  <title>Responsive Audit and Fixes</title>
+  <style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+    .cards { display: flex; flex-wrap: wrap; gap: 12px; }
+    article { flex: 1 1 180px; min-width: 0; border: 1px solid #cccccc; padding: 12px; }
+    .table-wrap { max-width: 100%; overflow-x: auto; }
+    table { border-collapse: collapse; min-width: 400px; }
+    th, td { padding: 8px; border: 1px solid #cccccc; text-align: left; }
+  </style>
+</head>
+<body>
+<h1>Responsive Audit</h1><nav><a href="#home">Home</a><a href="#services">Services</a><a href="#plans">Plans</a><a href="#contact">Contact</a></nav>
+  <main id="home"><h2>Cards</h2><div class="cards"><article id="services"><h3>Service One</h3><p>This card fits the screen width.</p></article><article><h3>Service Two</h3><p>This card can move to the next row.</p></article><article><h3>Service Three</h3><p>Text can wrap inside the card.</p></article></div>
+    <section id="plans"><h2>Example Table</h2><div class="table-wrap"><table><thead><tr><th>Plan</th><th>Storage</th><th>Support</th></tr></thead><tbody><tr><td>Basic</td><td>10 GB</td><td>Email</td></tr><tr><td>Plus</td><td>100 GB</td><td>Chat</td></tr></tbody></table></div></section>
+    <section id="contact"><h2>What Was Fixed</h2><ul><li>Navigation links can wrap.</li><li>Cards use a flexible layout.</li><li>The table can scroll on a small screen.</li></ul></section>
+  </main>
+</body>
+</html>

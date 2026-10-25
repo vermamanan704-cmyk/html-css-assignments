@@ -1,29 +1,33 @@
 # Assignment 2: Setup Proof
 
-This assignment needs a real screenshot from your computer. Do not use a made-up screenshot.
+The setup evidence is saved in `screenshots/setup-proof.png`.
 
-## Steps
+The image combines real screenshots captured at different moments. It is a collage, not one continuous desktop screenshot.
 
-1. Open VS Code.
-2. Open Terminal and choose New Terminal.
-3. Run these commands one at a time:
+## Verified versions
+
+- Node.js: `v26.9.0`
+- npm: `11.19.1`
+- Git: `2.55.0.windows.2`
+- Live Server: running on port `5500`
+- Test page: `06-basic-page.html`
+
+## Commands used
+
+Run these commands in the VS Code terminal:
 
 ```powershell
 node -v
-npm -v
+npm.cmd -v
 git --version
 ```
 
-4. Open the Extensions panel in VS Code. Install Live Server by Ritwick Dey if it is not installed.
-5. Open `06-basic-page.html`. Right-click the file and choose Open with Live Server.
-6. Make one screenshot that shows the terminal versions, the Live Server extension and the page open in the browser.
-7. Save your screenshot as `screenshots/setup-proof.png`.
+In this computer's PowerShell, `npm -v` is blocked because PowerShell does not allow the `npm.ps1` script to run. `npm.cmd -v` works and shows the npm version. There is no need to change the PowerShell security settings.
 
-Your folder should look like this:
+## If you need to take the proof again
 
-```text
-screenshots
-  setup-proof.png
-```
-
-The screenshots already shared show that VS Code, Git and Node.js are installed. They do not show the complete Live Server proof yet.
+1. Open `06-basic-page.html` in VS Code.
+2. Click **Go Live**.
+3. Open the page in Chrome.
+4. Keep the terminal version outputs visible.
+5. Save the screenshot as `screenshots/setup-proof.png`.

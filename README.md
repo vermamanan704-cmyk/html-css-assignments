@@ -84,7 +84,7 @@ The SVG images are small local illustrations. They work without an internet conn
 ## Before submission
 
 - Open the pages in a browser and check the layout.
-- Complete Assignment 2 by taking your own setup screenshot. Save it as `screenshots/setup-proof.png`.
+- Assignment 2 setup evidence is included in `screenshots/setup-proof.png`. It combines your real screenshots captured at different moments.
 - Check the Git history with `git log --oneline`.
 - Create the GitHub repository and push the project using Assignment 5.
 - Open the GitHub link and confirm that the files are visible.

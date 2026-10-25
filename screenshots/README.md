@@ -1,1 +1,1 @@
-Save your real setup screenshot here as setup-proof.png after completing Assignment 2. This folder intentionally contains no fabricated screenshot.
+The file `setup-proof.png` contains setup evidence from the screenshots provided by Manan. It combines real captures from different moments to show the browser page, VS Code, Live Server, and terminal versions together. It is clearly labelled as a collage, not as one continuous desktop screenshot.

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A small responsive image gallery using CSS Grid.">
+  <title>CSS Grid Gallery</title>
+  <style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+    .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    figure { margin: 0; border: 1px solid #cccccc; padding: 8px; }
+    img { display: block; width: 100%; height: auto; }
+    figcaption { padding-top: 6px; }
+    @media (max-width: 650px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 420px) { .gallery { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<h1>Web and Study Gallery</h1>
+  <p>The images are local files in this project.</p>
+  <main class="gallery">
+    <figure><img src="gallery-1.svg" alt="Illustration of a web page"><figcaption>Web Page</figcaption></figure>
+    <figure><img src="gallery-2.svg" alt="Illustration of a laptop for coding"><figcaption>Coding</figcaption></figure>
+    <figure><img src="gallery-3.svg" alt="Illustration of an AI project"><figcaption>AI Project</figcaption></figure>
+    <figure><img src="gallery-4.svg" alt="Illustration of books for study"><figcaption>Study</figcaption></figure>
+    <figure><img src="gallery-5.svg" alt="Illustration of a simple grid layout"><figcaption>CSS Grid</figcaption></figure>
+    <figure><img src="gallery-6.svg" alt="Illustration of a responsive page on two screens"><figcaption>Responsive Design</figcaption></figure>
+  </main>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple dashboard arranged with named CSS Grid areas.">
+  <title>CSS Grid Dashboard Areas</title>
+  <style>
+body { font-family: Arial, sans-serif; margin: 0; }
+    .dashboard { display: grid; grid-template-columns: 180px 1fr; grid-template-areas: "header header" "nav main" "nav aside" "footer footer"; gap: 12px; padding: 12px; }
+    header { grid-area: header; background: #eaf2f8; padding: 12px; }
+    nav { grid-area: nav; display: flex; flex-direction: column; gap: 10px; }
+    main { grid-area: main; }
+    aside { grid-area: aside; background: #f5f5f5; padding: 12px; }
+    footer { grid-area: footer; border-top: 1px solid #cccccc; padding: 8px; }
+    .cards { display: flex; flex-wrap: wrap; gap: 8px; }
+    .cards section { flex: 1 1 130px; border: 1px solid #cccccc; padding: 10px; }
+    @media (max-width: 550px) { .dashboard { grid-template-columns: 1fr; grid-template-areas: "header" "nav" "main" "aside" "footer"; } nav { flex-direction: row; flex-wrap: wrap; } }
+  </style>
+</head>
+<body>
+<div class="dashboard">
+    <header><h1>Student Dashboard</h1><p>Welcome, Manan Verma</p></header>
+    <nav><a href="#overview">Overview</a><a href="#courses">Courses</a><a href="#projects">Projects</a></nav>
+    <main id="overview"><h2>Overview</h2><div class="cards"><section><h3>Course</h3><p>BCA Artificial Intelligence</p></section><section><h3>Skills</h3><p>HTML and CSS</p></section><section><h3>Project</h3><p>Ollama AI application</p></section></div></main>
+    <aside id="courses"><h2>Learning</h2><p>Java and AI basics</p></aside>
+    <footer id="projects"><p>Created by Manan Verma</p></footer>
+  </div>
+</body>
+</html>

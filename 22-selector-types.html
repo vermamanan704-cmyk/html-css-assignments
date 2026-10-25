@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A page demonstrating element, class, ID, group and descendant selectors.">
+  <title>CSS Selector Types</title>
+  <style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+    p { color: #333333; }
+    .note { background: #fff2cc; padding: 8px; }
+    #important { color: #a00000; }
+    h1, h2 { color: #174a7e; }
+    section p { border-left: 3px solid #174a7e; padding-left: 8px; }
+  </style>
+</head>
+<body>
+<h1>CSS Selectors</h1>
+  <h2>Element Selector</h2><p>All paragraphs use the same base style.</p>
+  <h2>Class Selector</h2><p class="note">This paragraph uses a class selector.</p>
+  <h2>ID Selector</h2><p id="important">This paragraph uses an ID selector.</p>
+  <h2>Group Selector</h2><p class="group">This paragraph and the headings share a simple style.</p>
+  <section><h2>Descendant Selector</h2><p>This paragraph is inside a section.</p></section>
+</body>
+</html>

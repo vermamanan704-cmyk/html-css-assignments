@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple example of CSS variables used for colours and spacing.">
+  <title>CSS Design Tokens</title>
+  <style>
+:root { --primary: #174a7e; --accent: #f0b35a; --space: 16px; --text: #222222; }
+    body { font-family: Arial, sans-serif; color: var(--text); margin: 20px; }
+    main { max-width: 700px; margin: auto; }
+    .card { padding: var(--space); margin-bottom: var(--space); background: var(--primary); color: white; }
+    .accent { background: var(--accent); color: #222222; }
+    button { padding: 10px 16px; background: var(--primary); color: white; border: 0; }
+  </style>
+</head>
+<body>
+<main><h1>CSS Design Tokens</h1><p>CSS variables store values that can be reused.</p>
+    <section class="card"><h2>Primary Colour</h2><p>This box uses the primary colour.</p></section>
+    <section class="card accent"><h2>Accent Colour</h2><p>This box uses the accent colour.</p></section>
+    <button>Example Button</button>
+  </main>
+</body>
+</html>

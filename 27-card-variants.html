@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Three simple cards with different background and border styles.">
+  <title>CSS Card Variants</title>
+  <style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+    .cards { display: flex; flex-wrap: wrap; gap: 12px; }
+    .card { width: 200px; padding: 16px; }
+    .simple { border: 1px solid #cccccc; background: white; }
+    .colour { background: #eaf2f8; }
+    .outline { border: 2px solid #174a7e; }
+  </style>
+</head>
+<body>
+<h1>Card Variants</h1>
+  <div class="cards">
+    <section class="card simple"><h2>Simple Card</h2><p>White background and border.</p></section>
+    <section class="card colour"><h2>Colour Card</h2><p>Light blue background.</p></section>
+    <section class="card outline"><h2>Outline Card</h2><p>White background and coloured outline.</p></section>
+  </div>
+</body>
+</html>

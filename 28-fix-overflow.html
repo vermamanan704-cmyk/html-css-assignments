@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Examples of preventing long text, images and tables from breaking a layout.">
+  <title>Fixing CSS Overflow</title>
+  <style>
+body { font-family: Arial, sans-serif; margin: 20px; max-width: 900px; }
+    .responsive { max-width: 100%; height: auto; }
+    .long-text { overflow-wrap: anywhere; }
+    .table-wrap { max-width: 100%; overflow-x: auto; }
+    table { border-collapse: collapse; min-width: 500px; }
+    th, td { padding: 8px; }
+  </style>
+</head>
+<body>
+<h1>Fixing Overflow</h1>
+  <h2>Image</h2><img class="responsive" src="web-page.svg" alt="Illustration of a web page" width="600">
+  <h2>Long Text</h2><p class="long-text">ThisIsAnExampleOfAVeryLongWordThatShouldWrapInsideTheAvailableSpaceInsteadOfMakingTheWholePageTooWide.</p>
+  <h2>Wide Table</h2><div class="table-wrap"><table border="1"><tr><th>Item</th><th>Description</th><th>Category</th><th>Status</th></tr><tr><td>HTML</td><td>Page structure</td><td>Web</td><td>Learning</td></tr><tr><td>CSS</td><td>Page styling</td><td>Web</td><td>Learning</td></tr></table></div>
+</body>
+</html>

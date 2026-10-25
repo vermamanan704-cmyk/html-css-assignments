@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A basic hero section demonstrating position relative, absolute and z-index.">
+  <title>Hero Position and Z Index</title>
+  <style>
+body { font-family: Arial, sans-serif; margin: 0; }
+    header, main > section:not(.hero) { padding: 16px; }
+    .hero { position: relative; min-height: 220px; background: #8eb4c8; padding: 20px; }
+    .shade { position: absolute; inset: 0; background: #174a7e; opacity: 0.45; z-index: 1; }
+    .hero-content { position: relative; z-index: 2; color: white; }
+    a { display: inline-block; margin-right: 10px; }
+  </style>
+</head>
+<body>
+<header><h1>Explore New Places</h1><nav><a href="#destinations">Destinations</a> <a href="#about">About</a></nav></header>
+  <main><section class="hero"><div class="shade"></div><div class="hero-content"><h2>Plan Your Next Trip</h2><p>This example shows how positioned elements can overlap.</p><a href="#destinations">See Destinations</a></div></section>
+    <section id="destinations"><h2>Destinations</h2><p>Mountains, forests and beaches are examples of trip destinations.</p></section>
+    <section id="about"><h2>About This Page</h2><p>The dark overlay sits behind the text because of z-index.</p></section>
+  </main>
+</body>
+</html>
